@@ -1,0 +1,90 @@
+body {
+    background: url('water-4.gif') repeat;
+    background-position: center center;
+    color: white;
+}
+
+.App {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.App-header { 
+    grid-area: 1 / 2 / 2 / 12;
+    text-align: center;
+    font-size: 50px;
+}
+
+.Search { 
+    grid-area: 2 / 2 / 3 / 12; 
+    text-align: center;
+    border: 2px solid black;
+    margin-bottom: 1em;
+    background-color: rgba(65, 132, 255, 0.6);
+    padding: 1.75em;
+}
+
+#search-field {
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    font-size: large;
+    height: 2em;
+}
+
+.button, .button2 {
+    text-align: center;
+    color: blue;
+    background-color: white;
+    border-radius: 1em;
+    font-size: large;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.button:hover {
+    background: rgb(65, 132, 255);
+    color: white;
+    display: inline-block;
+}
+
+.button2:hover {
+    background: rgb(200, 197, 254);
+    color: black;
+    display: inline-block;
+}
+
+.Result { 
+    grid-area: 3 / 2 / 10 / 12; 
+    text-align: center;
+    border: 2px solid black;
+    overflow: scroll;
+    max-height: 40em;
+    padding: 1%;
+    background-color: rgba(65, 132, 255, 0.6);
+}
+
+.Verse {
+    text-align: left center;
+    border: 2px solid black;
+    margin: 1%;
+    padding: 1%;
+    font-size: large;
+    background-color: rgba(200, 197, 254, 0.6);
+    color: black;
+    font-size: x-large;
+}
+
+.Highlighted-Verse {
+    text-align: left center;
+    border: 2px solid black;
+    margin: 1%;
+    padding: 1%;
+    font-size: large;
+    background-color: rgba(197, 254, 200, 0.6);
+    color: black;
+    font-size: x-large;
+}
+
